@@ -166,7 +166,6 @@ GEM
     mini_portile (0.5.3)
     multi_json (1.10.1)
     multi_test (0.1.1)
-    mysql2 (0.3.16)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     poltergeist (1.5.1)
@@ -318,7 +317,6 @@ DEPENDENCIES
   jquery-rails
   launchy
   mailcatcher
-  mysql2
   poltergeist
   powder
   pry

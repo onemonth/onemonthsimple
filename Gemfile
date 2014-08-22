@@ -12,7 +12,7 @@ ruby '2.1.2'
 gem 'sqlite3'
 gem 'foreman'
 
-group :development, :mysql do
+group :development do
   gem 'brakeman'
   gem 'bundler-audit'
   gem 'guard-brakeman'
@@ -31,16 +31,12 @@ gem 'gauntlt'
 
 gem 'simplecov', :require => false, :group => :test
 
-group :development, :test, :mysql do
+group :development, :test do
   gem 'launchy'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'poltergeist'
   gem 'rspec-rails', '2.14.2'
-end
-
-group :mysql do
-  gem 'mysql2'
 end
 
 # Gems used only for assets and not required
