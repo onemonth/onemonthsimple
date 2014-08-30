@@ -4,7 +4,7 @@
 
 users = [
      {
-       :email => "admin@omsgoat.com", 
+       :email => "admin@onemonthsimple.com", 
        :admin => true, 
        :password => "admin1234", 
        :password_confirmation => "admin1234", 
@@ -13,7 +13,7 @@ users = [
        :user_id =>1 
       },
      {
-       :email => "jon@omsgoat.com", 
+       :email => "jon@onemonthsimple.com", 
        :admin => false, 
        :password => "password", 
        :password_confirmation => "password", 
@@ -22,7 +22,7 @@ users = [
        :user_id => 2
      },
      {
-       :email => "stiggy@omsgoat.com", 
+       :email => "chris@onemonthsimple.com", 
        :admin => false, 
        :password => "mybluepill", 
        :password_confirmation => "mybluepill", 
@@ -31,12 +31,12 @@ users = [
        :user_id =>3 
      },
      {
-       :email => "mattan@omsgoat.com", 
+       :email => "lee@onemonthsimple.com", 
        :admin => false, 
        :password => "theredpill", 
        :password_confirmation => "theredpill", 
-       :first_name => "Mattan", 
-       :last_name => "Griffel", 
+       :first_name => "Lee", 
+       :last_name => "Matos", 
        :user_id =>4 
       }
 ]
@@ -205,7 +205,7 @@ paid_time_off = [
     {
       :receiver_id => 4,
       :creator_id => 3,
-      :message => 'Welcome to Railsgoat.',
+      :message => 'Welcome to One Month Simple.',
       :read => false
     }
   ]

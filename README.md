@@ -1,6 +1,6 @@
-## OMSGOAT
+## One Month Simple - Payroll Application
 
-OMSGoat is a vulnerable version of the Ruby on Rails Framework based off the OWASP RailsGoat project. It includes vulnerabilities from the OWASP Top 10, as well as some "extras" that the initial project contributors felt worthwhile to share. This project is designed to educate both developers, as well as security professionals.
+One Month Simple is a vulnerable version of the Ruby on Rails Framework based off the OWASP RailsGoat project. It includes vulnerabilities from the OWASP Top 10, as well as some "extras" that the initial project contributors felt worthwhile to share. This project is designed to educate both developers, as well as security professionals.
 
 ## Getting Started
 
@@ -41,43 +41,6 @@ $ rails server
 ```
 
 Open your favorite browser, navigate to `http://localhost:3000` and start hacking!
-
-## Capybara Tests
-
-RailsGoat now includes a set of failing Capybara RSpecs, each one indicating that a separate vulnerability exists in the application. To run them, you first need to install [PhantomJS](https://github.com/jonleighton/poltergeist#installing-phantomjs), which is required by the Poltergeist Capybara driver. Upon installation, simply run the following rake task:
-
-```
-$ rake training
-```
-
-NOTE: As vulnerabilities are fixed in the application, these specs will not change to `passing`, but to `pending`.
-
-## Processing Email
-
-In order for RailsGoat to effectively process email, you will first need to run MailCatcher, an SMTP server that will intercept email messages and display them in a web interface.
-
-To start an instance of MailCatcher, simply run:
-
-```
-$ mailcatcher
-```
-
-If successful, you should see the following output:
-
-```
-Starting MailCatcher
-==> smtp://127.0.0.1:1025
-==> http://127.0.0.1:1080
-*** MailCatcher runs as a daemon by default. Go to the web interface to quit.
-```
-
-Alternatively, you can run MailCatcher in the foreground by running `mailcatcher -f` in your terminal.
-
-## Contributing
-
-As changes are made to the application, the Capybara RSpecs can be used to verify that the vulnerabilities in the application are still intact. To use them in this way, and have them `pass` instead of `fail`, set the `RAILSGOAT_MAINTAINER` environment variable.
-
-Conversion to the OWASP Top Ten 2013 completed in November, 2013.
 
 # License
 
