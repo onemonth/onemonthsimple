@@ -6,6 +6,8 @@ gem 'rack', '1.4.0'
 
 ruby '2.1.2'
 
+
+gem 'rack-attack'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 

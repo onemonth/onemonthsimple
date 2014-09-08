@@ -181,6 +181,8 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
     rack (1.4.0)
+    rack-attack (4.1.0)
+      rack
     rack-cache (1.2)
       rack (>= 0.4)
     rack-livereload (0.3.15)
@@ -321,6 +323,7 @@ DEPENDENCIES
   powder
   pry
   rack (= 1.4.0)
+  rack-attack
   rack-livereload
   rails (= 3.2.11)
   rb-fsevent
