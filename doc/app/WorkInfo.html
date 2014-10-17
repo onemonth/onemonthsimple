@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class WorkInfo - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/models/work_info.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">ActiveRecord::Base
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-cipher_type">#cipher_type</a>
+    
+    <li><a href="#method-i-decrypt_ssn">#decrypt_ssn</a>
+    
+    <li><a href="#method-i-encrypt_ssn">#encrypt_ssn</a>
+    
+    <li><a href="#method-i-iv">#iv</a>
+    
+    <li><a href="#method-i-key">#key</a>
+    
+    <li><a href="#method-i-last_four">#last_four</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Api.html">Api</a>
+  
+    <li><a href="./Api/V1.html">Api::V1</a>
+  
+    <li><a href="./Api/V1/MobileController.html">Api::V1::MobileController</a>
+  
+    <li><a href="./Api/V1/UsersController.html">Api::V1::UsersController</a>
+  
+    <li><a href="./Api/V1/UsersHelper.html">Api::V1::UsersHelper</a>
+  
+    <li><a href="./AdminController.html">AdminController</a>
+  
+    <li><a href="./AdminHelper.html">AdminHelper</a>
+  
+    <li><a href="./Analytics.html">Analytics</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BenefitFormsController.html">BenefitFormsController</a>
+  
+    <li><a href="./BenefitFormsHelper.html">BenefitFormsHelper</a>
+  
+    <li><a href="./Benefits.html">Benefits</a>
+  
+    <li><a href="./DashboardController.html">DashboardController</a>
+  
+    <li><a href="./DashboardHelper.html">DashboardHelper</a>
+  
+    <li><a href="./Encryption.html">Encryption</a>
+  
+    <li><a href="./KeyManagement.html">KeyManagement</a>
+  
+    <li><a href="./Message.html">Message</a>
+  
+    <li><a href="./MessagesController.html">MessagesController</a>
+  
+    <li><a href="./MessagesHelper.html">MessagesHelper</a>
+  
+    <li><a href="./PaidTimeOff.html">PaidTimeOff</a>
+  
+    <li><a href="./PaidTimeOffController.html">PaidTimeOffController</a>
+  
+    <li><a href="./PaidTimeOffHelper.html">PaidTimeOffHelper</a>
+  
+    <li><a href="./PasswordResetsController.html">PasswordResetsController</a>
+  
+    <li><a href="./PasswordResetsHelper.html">PasswordResetsHelper</a>
+  
+    <li><a href="./Pay.html">Pay</a>
+  
+    <li><a href="./PayController.html">PayController</a>
+  
+    <li><a href="./PayHelper.html">PayHelper</a>
+  
+    <li><a href="./Performance.html">Performance</a>
+  
+    <li><a href="./PerformanceController.html">PerformanceController</a>
+  
+    <li><a href="./PerformanceHelper.html">PerformanceHelper</a>
+  
+    <li><a href="./Retirement.html">Retirement</a>
+  
+    <li><a href="./RetirementController.html">RetirementController</a>
+  
+    <li><a href="./RetirementHelper.html">RetirementHelper</a>
+  
+    <li><a href="./Schedule.html">Schedule</a>
+  
+    <li><a href="./ScheduleController.html">ScheduleController</a>
+  
+    <li><a href="./ScheduleHelper.html">ScheduleHelper</a>
+  
+    <li><a href="./SessionsController.html">SessionsController</a>
+  
+    <li><a href="./SessionsHelper.html">SessionsHelper</a>
+  
+    <li><a href="./TutorialsController.html">TutorialsController</a>
+  
+    <li><a href="./TutorialsHelper.html">TutorialsHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserMailer.html">UserMailer</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+    <li><a href="./WorkInfo.html">WorkInfo</a>
+  
+    <li><a href="./WorkInfoController.html">WorkInfoController</a>
+  
+    <li><a href="./WorkInfoHelper.html">WorkInfoHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class WorkInfo</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="SSN">SSN
+        
+        <dd class="description">
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-cipher_type" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">cipher_type</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="cipher_type-source">
+            <pre><span class="ruby-comment"># File app/models/work_info.rb, line 38</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">cipher_type</span>
+  <span class="ruby-string">&#39;aes-256-cbc&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- cipher_type-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- cipher_type-method -->
+
+    
+      <div id="method-i-decrypt_ssn" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">decrypt_ssn</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="decrypt_ssn-source">
+            <pre><span class="ruby-comment"># File app/models/work_info.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">decrypt_ssn</span>
+  <span class="ruby-identifier">aes</span> = <span class="ruby-constant">OpenSSL</span><span class="ruby-operator">::</span><span class="ruby-constant">Cipher</span><span class="ruby-operator">::</span><span class="ruby-constant">Cipher</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">cipher_type</span>)
+  <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">decrypt</span>
+  <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">key</span> = <span class="ruby-identifier">key</span>
+  <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">iv</span> = <span class="ruby-identifier">iv</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">iv</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">update</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">encrypted_ssn</span>) <span class="ruby-operator">+</span> <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">final</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- decrypt_ssn-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- decrypt_ssn-method -->
+
+    
+      <div id="method-i-encrypt_ssn" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">encrypt_ssn</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="encrypt_ssn-source">
+            <pre><span class="ruby-comment"># File app/models/work_info.rb, line 11</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">encrypt_ssn</span>
+  <span class="ruby-identifier">aes</span> = <span class="ruby-constant">OpenSSL</span><span class="ruby-operator">::</span><span class="ruby-constant">Cipher</span><span class="ruby-operator">::</span><span class="ruby-constant">Cipher</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">cipher_type</span>)
+  <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">encrypt</span>
+  <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">key</span> = <span class="ruby-identifier">key</span>
+  <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">iv</span> = <span class="ruby-identifier">iv</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">iv</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">encrypted_ssn</span> = <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">update</span>(<span class="ruby-keyword">self</span>.<span class="ruby-constant">SSN</span>) <span class="ruby-operator">+</span> <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">final</span>
+  <span class="ruby-keyword">self</span>.<span class="ruby-constant">SSN</span> = <span class="ruby-keyword">nil</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- encrypt_ssn-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- encrypt_ssn-method -->
+
+    
+      <div id="method-i-iv" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">iv</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="iv-source">
+            <pre><span class="ruby-comment"># File app/models/work_info.rb, line 33</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">iv</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-string">&quot;No IV for this User&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span>(<span class="ruby-keyword">self</span>.<span class="ruby-identifier">key_management</span>.<span class="ruby-identifier">iv</span>)
+  <span class="ruby-keyword">self</span>.<span class="ruby-identifier">key_management</span>.<span class="ruby-identifier">iv</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- iv-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- iv-method -->
+
+    
+      <div id="method-i-key" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">key</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="key-source">
+            <pre><span class="ruby-comment"># File app/models/work_info.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">key</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-string">&quot;Key Missing&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span>(<span class="ruby-constant">KEY</span>)
+  <span class="ruby-constant">KEY</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- key-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- key-method -->
+
+    
+      <div id="method-i-last_four" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">last_four</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>We should probably use this</p>
+          
+
+          
+          <div class="method-source-code" id="last_four-source">
+            <pre><span class="ruby-comment"># File app/models/work_info.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">last_four</span>
+  <span class="ruby-string">&quot;***-**-&quot;</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">decrypt_ssn</span>[<span class="ruby-value">-4</span>,<span class="ruby-value">4</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- last_four-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- last_four-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

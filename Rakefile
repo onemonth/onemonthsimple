@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Railsgoat::Application.load_tasks
+Onemonthsimple::Application.load_tasks

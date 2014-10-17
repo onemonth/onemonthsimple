@@ -5,6 +5,6 @@ class UserMailer < ActionMailer::Base
     @token = token
     @url = url_for(controller: "password_resets", action: "reset_password", only_path: false) + "?token=#{token}"
 
-    mail(to: "#{email}", subject: "Reset your MetaCorp password")
+    mail(to: "#{email}", subject: "Reset your OneMonthSimple password")
   end
 end

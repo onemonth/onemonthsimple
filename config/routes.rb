@@ -1,4 +1,4 @@
-Railsgoat::Application.routes.draw do
+Onemonthsimple::Application.routes.draw do
 
   get "login" => "sessions#new"
   get "signup" => "users#new"

@@ -7,12 +7,7 @@ class User < ActiveRecord::Base
                        :length => {:within => 6..40},
                        :on => :create,
                        :if => :password
-=begin
-  validates :password, :presence => true,
-                        :confirmation => true,
-                        :if => :password,
-                        :format => {:with => /\A.*(?=.{10,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\@\#\$\%\^\&\+\=]).*\z/}
-=end
+
   validates_presence_of :email
   validates_uniqueness_of :email
   validates_format_of :email, :with => /.+@.+\..+/i
@@ -32,21 +27,12 @@ class User < ActiveRecord::Base
     build_retirement(POPULATE_RETIREMENTS.shuffle.first)
     build_paid_time_off(POPULATE_PAID_TIME_OFF.shuffle.first).schedule.build(POPULATE_SCHEDULE.shuffle.first)
     build_work_info(POPULATE_WORK_INFO.shuffle.first)
-    # Uncomment below line to use encrypted SSN(s)
-    #work_info.build_key_management(:iv => SecureRandom.hex(32))
     performance.build(POPULATE_PERFORMANCE.shuffle.first)
   end
 
   def full_name
     "#{self.first_name} #{self.last_name}"
   end
-
-=begin
-  # Instead of the entire user object being returned, we can use this to filter.
-  def as_json
-    super(only: [:user_id, :email, :first_name, :last_name])
-  end
-=end
 
   private
 
@@ -61,18 +47,6 @@ class User < ActiveRecord::Base
     end
     return auth
   end
-
-=begin
-  # More secure version, still lacking a decent hashing routine, this is for timing attack prevention
-  def self.authenticate(email, password)
-       user = find_by_email(email) || User.new(:password => "")
-        if Rack::Utils.secure_compare(user.password, Digest::MD5.hexdigest(password))
-          return user
-        else
-          raise "Incorrect username or password"
-        end
-   end
-=end
 
   def assign_user_id
     unless @skip_user_id_assign.present? || self.user_id.present?

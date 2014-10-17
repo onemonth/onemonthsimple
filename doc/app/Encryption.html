@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>module Encryption - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="module">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/encryption.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-cipher_type">::cipher_type</a>
+    
+    <li><a href="#method-c-decrypt_sensitive_value">::decrypt_sensitive_value</a>
+    
+    <li><a href="#method-c-encrypt_sensitive_value">::encrypt_sensitive_value</a>
+    
+    <li><a href="#method-c-iv">::iv</a>
+    
+    <li><a href="#method-c-key">::key</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Api.html">Api</a>
+  
+    <li><a href="./Api/V1.html">Api::V1</a>
+  
+    <li><a href="./Api/V1/MobileController.html">Api::V1::MobileController</a>
+  
+    <li><a href="./Api/V1/UsersController.html">Api::V1::UsersController</a>
+  
+    <li><a href="./Api/V1/UsersHelper.html">Api::V1::UsersHelper</a>
+  
+    <li><a href="./AdminController.html">AdminController</a>
+  
+    <li><a href="./AdminHelper.html">AdminHelper</a>
+  
+    <li><a href="./Analytics.html">Analytics</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BenefitFormsController.html">BenefitFormsController</a>
+  
+    <li><a href="./BenefitFormsHelper.html">BenefitFormsHelper</a>
+  
+    <li><a href="./Benefits.html">Benefits</a>
+  
+    <li><a href="./DashboardController.html">DashboardController</a>
+  
+    <li><a href="./DashboardHelper.html">DashboardHelper</a>
+  
+    <li><a href="./Encryption.html">Encryption</a>
+  
+    <li><a href="./KeyManagement.html">KeyManagement</a>
+  
+    <li><a href="./Message.html">Message</a>
+  
+    <li><a href="./MessagesController.html">MessagesController</a>
+  
+    <li><a href="./MessagesHelper.html">MessagesHelper</a>
+  
+    <li><a href="./PaidTimeOff.html">PaidTimeOff</a>
+  
+    <li><a href="./PaidTimeOffController.html">PaidTimeOffController</a>
+  
+    <li><a href="./PaidTimeOffHelper.html">PaidTimeOffHelper</a>
+  
+    <li><a href="./PasswordResetsController.html">PasswordResetsController</a>
+  
+    <li><a href="./PasswordResetsHelper.html">PasswordResetsHelper</a>
+  
+    <li><a href="./Pay.html">Pay</a>
+  
+    <li><a href="./PayController.html">PayController</a>
+  
+    <li><a href="./PayHelper.html">PayHelper</a>
+  
+    <li><a href="./Performance.html">Performance</a>
+  
+    <li><a href="./PerformanceController.html">PerformanceController</a>
+  
+    <li><a href="./PerformanceHelper.html">PerformanceHelper</a>
+  
+    <li><a href="./Retirement.html">Retirement</a>
+  
+    <li><a href="./RetirementController.html">RetirementController</a>
+  
+    <li><a href="./RetirementHelper.html">RetirementHelper</a>
+  
+    <li><a href="./Schedule.html">Schedule</a>
+  
+    <li><a href="./ScheduleController.html">ScheduleController</a>
+  
+    <li><a href="./ScheduleHelper.html">ScheduleHelper</a>
+  
+    <li><a href="./SessionsController.html">SessionsController</a>
+  
+    <li><a href="./SessionsHelper.html">SessionsHelper</a>
+  
+    <li><a href="./TutorialsController.html">TutorialsController</a>
+  
+    <li><a href="./TutorialsHelper.html">TutorialsHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserMailer.html">UserMailer</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+    <li><a href="./WorkInfo.html">WorkInfo</a>
+  
+    <li><a href="./WorkInfoController.html">WorkInfoController</a>
+  
+    <li><a href="./WorkInfoHelper.html">WorkInfoHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="module">module Encryption</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-cipher_type" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">cipher_type</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="cipher_type-source">
+            <pre><span class="ruby-comment"># File lib/encryption.rb, line 32</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">cipher_type</span>
+  <span class="ruby-string">&#39;aes-256-cbc&#39;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- cipher_type-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- cipher_type-method -->
+
+    
+      <div id="method-c-decrypt_sensitive_value" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">decrypt_sensitive_value</span><span
+            class="method-args">(val="")</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="decrypt_sensitive_value-source">
+            <pre><span class="ruby-comment"># File lib/encryption.rb, line 13</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">decrypt_sensitive_value</span>(<span class="ruby-identifier">val</span>=<span class="ruby-string">&quot;&quot;</span>)
+   <span class="ruby-identifier">aes</span> = <span class="ruby-constant">OpenSSL</span><span class="ruby-operator">::</span><span class="ruby-constant">Cipher</span><span class="ruby-operator">::</span><span class="ruby-constant">Cipher</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">cipher_type</span>)
+   <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">decrypt</span>
+   <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">key</span> = <span class="ruby-identifier">key</span>
+   <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">iv</span> = <span class="ruby-identifier">iv</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">iv</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>
+   <span class="ruby-identifier">decoded</span> = <span class="ruby-constant">Base64</span>.<span class="ruby-identifier">strict_decode64</span>(<span class="ruby-node">&quot;#{val}&quot;</span>)
+   <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">update</span>(<span class="ruby-node">&quot;#{decoded}&quot;</span>) <span class="ruby-operator">+</span> <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">final</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- decrypt_sensitive_value-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- decrypt_sensitive_value-method -->
+
+    
+      <div id="method-c-encrypt_sensitive_value" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">encrypt_sensitive_value</span><span
+            class="method-args">(val="")</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Added a re-usable encryption routine, shouldn&#39;t be an issue!</p>
+          
+
+          
+          <div class="method-source-code" id="encrypt_sensitive_value-source">
+            <pre><span class="ruby-comment"># File lib/encryption.rb, line 4</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">encrypt_sensitive_value</span>(<span class="ruby-identifier">val</span>=<span class="ruby-string">&quot;&quot;</span>)
+   <span class="ruby-identifier">aes</span> = <span class="ruby-constant">OpenSSL</span><span class="ruby-operator">::</span><span class="ruby-constant">Cipher</span><span class="ruby-operator">::</span><span class="ruby-constant">Cipher</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">cipher_type</span>)
+   <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">encrypt</span>
+   <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">key</span> = <span class="ruby-identifier">key</span>
+   <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">iv</span> = <span class="ruby-identifier">iv</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">iv</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword">nil</span>
+   <span class="ruby-identifier">new_val</span> = <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">update</span>(<span class="ruby-node">&quot;#{val}&quot;</span>) <span class="ruby-operator">+</span> <span class="ruby-identifier">aes</span>.<span class="ruby-identifier">final</span>
+   <span class="ruby-constant">Base64</span>.<span class="ruby-identifier">strict_encode64</span>(<span class="ruby-identifier">new_val</span>).<span class="ruby-identifier">encode</span>(<span class="ruby-string">&#39;utf-8&#39;</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- encrypt_sensitive_value-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- encrypt_sensitive_value-method -->
+
+    
+      <div id="method-c-iv" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">iv</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="iv-source">
+            <pre><span class="ruby-comment"># File lib/encryption.rb, line 28</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">iv</span>
+  <span class="ruby-constant">RG_IV</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- iv-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- iv-method -->
+
+    
+      <div id="method-c-key" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">key</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Should be able to just re-use the same key we already have!</p>
+          
+
+          
+          <div class="method-source-code" id="key-source">
+            <pre><span class="ruby-comment"># File lib/encryption.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">key</span>
+  <span class="ruby-identifier">raise</span> <span class="ruby-string">&quot;Key Missing&quot;</span> <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span>(<span class="ruby-constant">KEY</span>)
+  <span class="ruby-constant">KEY</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- key-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- key-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -12,7 +12,6 @@ class SessionsController < ApplicationController
     begin
       # Normalize the email address, why not
       user = User.authenticate(params[:email].to_s.downcase, params[:password])
-      # @url = params[:url]
       rescue Exception => e
     end
 

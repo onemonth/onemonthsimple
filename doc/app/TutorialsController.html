@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class TutorialsController - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/controllers/tutorials_controller.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="ApplicationController.html">ApplicationController</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-access_control">#access_control</a>
+    
+    <li><a href="#method-i-broken_auth">#broken_auth</a>
+    
+    <li><a href="#method-i-credentials">#credentials</a>
+    
+    <li><a href="#method-i-crypto">#crypto</a>
+    
+    <li><a href="#method-i-csrf">#csrf</a>
+    
+    <li><a href="#method-i-guantlt">#guantlt</a>
+    
+    <li><a href="#method-i-guard">#guard</a>
+    
+    <li><a href="#method-i-index">#index</a>
+    
+    <li><a href="#method-i-injection">#injection</a>
+    
+    <li><a href="#method-i-insecure_components">#insecure_components</a>
+    
+    <li><a href="#method-i-insecure_dor">#insecure_dor</a>
+    
+    <li><a href="#method-i-logic_flaws">#logic_flaws</a>
+    
+    <li><a href="#method-i-mass_assignment">#mass_assignment</a>
+    
+    <li><a href="#method-i-metaprogramming">#metaprogramming</a>
+    
+    <li><a href="#method-i-misconfig">#misconfig</a>
+    
+    <li><a href="#method-i-redirects">#redirects</a>
+    
+    <li><a href="#method-i-show">#show</a>
+    
+    <li><a href="#method-i-ssl_tls">#ssl_tls</a>
+    
+    <li><a href="#method-i-url_access">#url_access</a>
+    
+    <li><a href="#method-i-xss">#xss</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Api.html">Api</a>
+  
+    <li><a href="./Api/V1.html">Api::V1</a>
+  
+    <li><a href="./Api/V1/MobileController.html">Api::V1::MobileController</a>
+  
+    <li><a href="./Api/V1/UsersController.html">Api::V1::UsersController</a>
+  
+    <li><a href="./Api/V1/UsersHelper.html">Api::V1::UsersHelper</a>
+  
+    <li><a href="./AdminController.html">AdminController</a>
+  
+    <li><a href="./AdminHelper.html">AdminHelper</a>
+  
+    <li><a href="./Analytics.html">Analytics</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./BenefitFormsController.html">BenefitFormsController</a>
+  
+    <li><a href="./BenefitFormsHelper.html">BenefitFormsHelper</a>
+  
+    <li><a href="./Benefits.html">Benefits</a>
+  
+    <li><a href="./DashboardController.html">DashboardController</a>
+  
+    <li><a href="./DashboardHelper.html">DashboardHelper</a>
+  
+    <li><a href="./Encryption.html">Encryption</a>
+  
+    <li><a href="./KeyManagement.html">KeyManagement</a>
+  
+    <li><a href="./Message.html">Message</a>
+  
+    <li><a href="./MessagesController.html">MessagesController</a>
+  
+    <li><a href="./MessagesHelper.html">MessagesHelper</a>
+  
+    <li><a href="./PaidTimeOff.html">PaidTimeOff</a>
+  
+    <li><a href="./PaidTimeOffController.html">PaidTimeOffController</a>
+  
+    <li><a href="./PaidTimeOffHelper.html">PaidTimeOffHelper</a>
+  
+    <li><a href="./PasswordResetsController.html">PasswordResetsController</a>
+  
+    <li><a href="./PasswordResetsHelper.html">PasswordResetsHelper</a>
+  
+    <li><a href="./Pay.html">Pay</a>
+  
+    <li><a href="./PayController.html">PayController</a>
+  
+    <li><a href="./PayHelper.html">PayHelper</a>
+  
+    <li><a href="./Performance.html">Performance</a>
+  
+    <li><a href="./PerformanceController.html">PerformanceController</a>
+  
+    <li><a href="./PerformanceHelper.html">PerformanceHelper</a>
+  
+    <li><a href="./Retirement.html">Retirement</a>
+  
+    <li><a href="./RetirementController.html">RetirementController</a>
+  
+    <li><a href="./RetirementHelper.html">RetirementHelper</a>
+  
+    <li><a href="./Schedule.html">Schedule</a>
+  
+    <li><a href="./ScheduleController.html">ScheduleController</a>
+  
+    <li><a href="./ScheduleHelper.html">ScheduleHelper</a>
+  
+    <li><a href="./SessionsController.html">SessionsController</a>
+  
+    <li><a href="./SessionsHelper.html">SessionsHelper</a>
+  
+    <li><a href="./TutorialsController.html">TutorialsController</a>
+  
+    <li><a href="./TutorialsHelper.html">TutorialsHelper</a>
+  
+    <li><a href="./User.html">User</a>
+  
+    <li><a href="./UserMailer.html">UserMailer</a>
+  
+    <li><a href="./UsersController.html">UsersController</a>
+  
+    <li><a href="./UsersHelper.html">UsersHelper</a>
+  
+    <li><a href="./WorkInfo.html">WorkInfo</a>
+  
+    <li><a href="./WorkInfoController.html">WorkInfoController</a>
+  
+    <li><a href="./WorkInfoHelper.html">WorkInfoHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class TutorialsController</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-access_control" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">access_control</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="access_control-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 67</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">access_control</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- access_control-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- access_control-method -->
+
+    
+      <div id="method-i-broken_auth" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">broken_auth</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="broken_auth-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 32</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">broken_auth</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- broken_auth-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- broken_auth-method -->
+
+    
+      <div id="method-i-credentials" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">credentials</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="credentials-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">credentials</span>
+  <span class="ruby-identifier">render</span> <span class="ruby-value">:partial</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;layouts/tutorial/credentials/creds&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- credentials-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- credentials-method -->
+
+    
+      <div id="method-i-crypto" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">crypto</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="crypto-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 70</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">crypto</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- crypto-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- crypto-method -->
+
+    
+      <div id="method-i-csrf" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">csrf</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="csrf-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 38</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">csrf</span>
+  <span class="ruby-ivar">@meta_code_bad</span> = <span class="ruby-node">%Q{&lt;%#= csrf_meta_tags %&gt; &lt;!-- &lt;~ What is this for? I hear it helps w/ JS and Sea-surfing.....whatevz --&gt;}</span>
+  <span class="ruby-ivar">@meta_code_good</span> = <span class="ruby-string">%Q{&lt;%= csrf_meta_tags %&gt; }</span>
+  <span class="ruby-ivar">@ajax_code_good</span> = <span class="ruby-string">%q{
+    (&quot;#example_submit_button_id&quot;).click(function(event) {
+        var valuesToSubmit = $(&quot;#example_form_id&quot;).serialize();
+        event.preventDefault();
+        $.ajax(\{
+          url: &quot;/example&quot;,
+        data: valuesToSubmit,
+        type: &quot;POST&quot;,
+        success: function(response) \{
+          alert(&#39;success!&#39;);
+        },
+        error: function(event) \{
+         alert(&#39;failure!&#39;);
+        \}
+      \});
+    \});
+
+  \}</span> }
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- csrf-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- csrf-method -->
+
+    
+      <div id="method-i-guantlt" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">guantlt</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="guantlt-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 91</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">guantlt</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- guantlt-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- guantlt-method -->
+
+    
+      <div id="method-i-guard" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">guard</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="guard-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 82</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">guard</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- guard-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- guard-method -->
+
+    
+      <div id="method-i-index" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">index</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="index-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">index</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- index-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- index-method -->
+
+    
+      <div id="method-i-injection" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">injection</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="injection-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 16</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">injection</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- injection-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- injection-method -->
+
+    
+      <div id="method-i-insecure_components" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">insecure_components</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="insecure_components-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 64</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">insecure_components</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- insecure_components-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- insecure_components-method -->
+
+    
+      <div id="method-i-insecure_dor" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">insecure_dor</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="insecure_dor-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 35</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">insecure_dor</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- insecure_dor-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- insecure_dor-method -->
+
+    
+      <div id="method-i-logic_flaws" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">logic_flaws</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="logic_flaws-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 85</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">logic_flaws</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- logic_flaws-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- logic_flaws-method -->
+
+    
+      <div id="method-i-mass_assignment" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">mass_assignment</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="mass_assignment-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 88</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">mass_assignment</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- mass_assignment-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- mass_assignment-method -->
+
+    
+      <div id="method-i-metaprogramming" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">metaprogramming</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="metaprogramming-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 95</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">metaprogramming</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- metaprogramming-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- metaprogramming-method -->
+
+    
+      <div id="method-i-misconfig" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">misconfig</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="misconfig-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 61</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">misconfig</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- misconfig-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- misconfig-method -->
+
+    
+      <div id="method-i-redirects" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">redirects</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="redirects-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 79</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">redirects</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- redirects-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- redirects-method -->
+
+    
+      <div id="method-i-show" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">show</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="show-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 12</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">show</span>
+  <span class="ruby-identifier">render</span> <span class="ruby-string">&quot;injection&quot;</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- show-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- show-method -->
+
+    
+      <div id="method-i-ssl_tls" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">ssl_tls</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="ssl_tls-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 76</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">ssl_tls</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- ssl_tls-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- ssl_tls-method -->
+
+    
+      <div id="method-i-url_access" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">url_access</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="url_access-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 73</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">url_access</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- url_access-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- url_access-method -->
+
+    
+      <div id="method-i-xss" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">xss</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="xss-source">
+            <pre><span class="ruby-comment"># File app/controllers/tutorials_controller.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">xss</span>
+  <span class="ruby-ivar">@code</span> = <span class="ruby-node">%Q{
+    &lt;li style=&quot;color: #FFFFFF&quot;&gt;
+      &lt;!--
+      I&#39;m going to use HTML safe because we had some weird stuff
+      going on with funny chars and jquery, plus it says safe so I&#39;m guessing
+      nothing bad will happen
+      --&gt;
+      Welcome, &lt;%= current_user.first_name.html_safe %&gt;
+    &lt;/li&gt;
+  }</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- xss-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- xss-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

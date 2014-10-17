@@ -20,7 +20,7 @@
        <% @users.each do |u|%>
       <tr>
             <td style="word-wrap:break-word;">
-              <%= "#{u.first_name} #{u.last_name}"%>
+              <%= raw "#{u.first_name} #{u.last_name}"%>
             </td>
             <td>
               <%= u.email%>
