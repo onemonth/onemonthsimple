@@ -4,28 +4,52 @@ One Month Simple is a vulnerable version of the Ruby on Rails Framework based of
 
 ## Getting Started
 
-To begin, install the Ruby Version Manager (RVM):
+To begin, make sure SQLite is installed:
+
+For macports
+```
+# port install sqlite3 +universal
+```
+
+For linux:
+```
+# yum install sqlite-devel'
+
+or
+
+# apt-get install libsqlite3-dev'
+```
+
+Install the Ruby Version Manager (RVM):
 
 ```
-$ curl -L https://get.rvm.io | bash -s stable --autolibs=3 --ruby=2.1.2
+$ curl -L https://get.rvm.io | bash
 ```
 
-After installing the package, clone this repo:
+Install and run ruby 2.1.2:
+Note - You may need to run "bash --login" to start a new shell with rvm.
+
+```
+rvm install ruby-2.1.2
+```
+
+Clone the code:
 
 ```
 $ git clone https://github.com/jrose400/onemonthsimple
 ```
 
-Navigate into the directory and install the dependencies:
-
-```
-$ bundle install
-```
-
-If you receive an error, make sure you have `bundler` installed:
+Install `bundler`:
 
 ```
 $ gem install bundler
+```
+
+Navigate into the directory and install the dependencies:
+
+```
+$ cd onemonthsimple
+$ bundle install
 ```
 
 Initialize the database:
