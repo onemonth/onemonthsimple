@@ -13,7 +13,7 @@ $ curl -L https://get.rvm.io | bash -s stable --autolibs=3 --ruby=2.1.2
 After installing the package, clone this repo:
 
 ```
-$ git clone git@github.com:OWASP/railsgoat.git
+$ git clone https://github.com/jrose400/onemonthsimple
 ```
 
 Navigate into the directory and install the dependencies:
