@@ -36,7 +36,7 @@ rvm install ruby-2.1.2
 Clone the code:
 
 ```
-$ git clone https://github.com/jrose400/onemonthsimple
+$ git clone https://github.com/onemonth/onemonthsimple
 ```
 
 Install `bundler`:
