@@ -1,9 +1,5 @@
 ## One Month Simple - Payroll Application
 
-One Month Simple is a vulnerable version of the Ruby on Rails Framework based off the OWASP RailsGoat project. It includes vulnerabilities from the OWASP Top 10, as well as some "extras" that the initial project contributors felt worthwhile to share. This project is designed to educate both developers, as well as security professionals.
-
-## Getting Started
-
 Go to onemonth.com and check out the web security class!
 
 # License
