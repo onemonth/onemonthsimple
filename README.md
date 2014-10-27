@@ -6,63 +6,63 @@ One Month Simple is a vulnerable version of the Ruby on Rails Framework based of
 
 1. Make sure SQLite is installed:
 
-For brew
-```
-# brew i nstall sqlite3
-```
+  For brew
+  ```
+  # brew i nstall sqlite3
+  ```
 
-For linux:
-```
-# yum install sqlite-devel'
+  For linux:
+  ```
+  # yum install sqlite-devel
 
-or
+  or
 
-# apt-get install libsqlite3-dev'
-```
+  # apt-get install libsqlite3-dev
+  ```
 
 2. Next, install the Ruby Version Manager (RVM) if you don't already have it:
 
-```
-$ curl -L https://get.rvm.io | bash
-```
+  ```
+  $ curl -L https://get.rvm.io | bash
+  ```
 
-Install and run ruby 2.1.2:
-Note - You may need to run "bash --login" to start a new shell with rvm.
+  Install and run ruby 2.1.2:
+  Note - You may need to run "bash --login" to start a new shell with rvm.
 
-```
-rvm install ruby-2.1.2
-```
+  ```
+  rvm install ruby-2.1.2
+  ```
 
 3. Now, clone the code to a local directory:
 
-```
-$ git clone https://github.com/onemonth/onemonthsimple
-```
+  ```
+  $ git clone https://github.com/onemonth/onemonthsimple
+  ```
 
 4. Install bundler which will be used to install the required project Gems:
 
-```
-$ gem install bundler
-```
+  ```
+  $ gem install bundler
+  ```
 
 5. Navigate into the directory and install the project gems using bundler:
 
-```
-$ cd onemonthsimple
-$ bundle install
-```
+  ```
+  $ cd onemonthsimple
+  $ bundle install
+  ```
 
 6. Initialize the database using the rake command:
 
-```
-$ rake db:setup
-```
+  ```
+  $ rake db:setup
+  ```
 
 7. Start the webserver and access the site:
 
-```
-$ rails server
-```
+  ```
+  $ rails server
+  ```
 
 Open your favorite browser, navigate to `http://localhost:3000` and start hacking!
 
